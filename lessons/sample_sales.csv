@@ -1,0 +1,11 @@
+OrderID,Product,Category,Quantity,Price,Date,Country
+1001,Laptop,Electronics,1,1200.00,2026-06-01,US
+1002,Headphones,Electronics,2,150.00,2026-06-02,UK
+1003,T-shirt,Apparel,3,25.00,2026-06-03,US
+1004,Coffee Maker,Home,1,85.00,2026-06-04,Germany
+1005,Laptop,Electronics,1,1200.00,2026-06-05,Germany
+1006,Desk Chair,Furniture,1,250.00,2026-06-06,UK
+1007,Running Shoes,Apparel,2,110.00,2026-06-07,US
+1008,Smartphone,Electronics,2,800.00,2026-06-08,US
+1009,T-shirt,Apparel,5,25.00,2026-06-09,Germany
+1010,Coffee Maker,Home,2,85.00,2026-06-10,UK
