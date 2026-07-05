@@ -21,22 +21,22 @@ Welcome to your structured Data Science tutorial! This curriculum is designed to
 
 | Mod | Topic | Description | Status |
 |---|---|---|---|
-| **07** | **Feature Scaling & Pipelines** | Normalize data and chain preprocessing with ML models for clean code. | 📖 **Next Up** |
-| **08** | **Hyperparameter Tuning** | Optimize model settings using `GridSearchCV`. | 🔒 Locked |
+| **07** | **Feature Scaling & Pipelines** | Normalize data and chain preprocessing with ML models for clean code. | ✅ Completed |
+| **08** | **Hyperparameter Tuning** | Optimize model settings using `GridSearchCV`. | 📖 **Next Up** |
 | **09** | **Cross-Validation** | Robustly evaluate models to prevent overfitting. | 🔒 Locked |
 
 ---
 
-## 🛠️ Current Lesson: Lesson 7 (Pipelines)
+## 🛠️ Current Lesson: Lesson 8 (Hyperparameter Tuning)
 
-Welcome to **Level 2**! Your next lesson is ready in the `lessons/` directory:
-👉 **[lessons/lesson7_pipelines.py](file:///home/denisd/Documents/My%20Projects/Data%20Science%20Practicals/lessons/lesson7_pipelines.py)**
+Welcome to **Module 8**! Your next lesson is ready:
+👉 **[lessons/lesson8_tuning.py](file:///home/denisd/Documents/My%20Projects/Data%20Science%20Practicals/lessons/lesson8_tuning.py)** / **[lessons/lesson8_tuning.ipynb](file:///home/denisd/Documents/My%20Projects/Data%20Science%20Practicals/lessons/lesson8_tuning.ipynb)**
 
 ### How to Run it:
 Activate your virtual environment and run the script:
 ```bash
 source .venv/bin/activate
-python lessons/lesson7_pipelines.py
+python lessons/lesson8_tuning.py
 ```
 
 Read through the code comments, run the file, and complete the **exercises** at the bottom of the script!
