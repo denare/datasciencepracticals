@@ -13,25 +13,30 @@ Welcome to your structured Data Science tutorial! This curriculum is designed to
 | **03** | **Data Visualization** | Custom plots with Matplotlib & statistical graphs with Seaborn. | ✅ Completed |
 | **04** | **Exploratory Data Analysis** | Investigating a real dataset, finding patterns, and cleaning data. | ✅ Completed |
 | **05** | **Intro to Machine Learning** | Split data, train a model, predict, and evaluate with Scikit-learn. | ✅ Completed |
-| **06** | **Capstone Project** | End-to-end project using all skills: EDA → cleaning → ML model → evaluation. | 📖 **Next Up** |
+| **06** | **Capstone Project** | End-to-end project using all skills: EDA → cleaning → ML model → evaluation. | ✅ Completed |
 
 ---
 
-## 🎓 Current Lesson: Capstone Project
+## 📈 Level 2: Intermediate Data Science
 
-You've completed all the core modules! Now it's time to apply everything in one real-world project.
-👉 **[lessons/capstone_project.py](file:///home/denisd/Documents/My%20Projects/Data%20Science%20Practicals/lessons/capstone_project.py)**
+| Mod | Topic | Description | Status |
+|---|---|---|---|
+| **07** | **Feature Scaling & Pipelines** | Normalize data and chain preprocessing with ML models for clean code. | 📖 **Next Up** |
+| **08** | **Hyperparameter Tuning** | Optimize model settings using `GridSearchCV`. | 🔒 Locked |
+| **09** | **Cross-Validation** | Robustly evaluate models to prevent overfitting. | 🔒 Locked |
+
+---
+
+## 🛠️ Current Lesson: Lesson 7 (Pipelines)
+
+Welcome to **Level 2**! Your next lesson is ready in the `lessons/` directory:
+👉 **[lessons/lesson7_pipelines.py](file:///home/denisd/Documents/My%20Projects/Data%20Science%20Practicals/lessons/lesson7_pipelines.py)**
 
 ### How to Run it:
 Activate your virtual environment and run the script:
 ```bash
 source .venv/bin/activate
-python lessons/capstone_project.py
+python lessons/lesson7_pipelines.py
 ```
 
-This project uses the **Titanic dataset** to build a complete pipeline:
-- **EDA** to understand the data
-- **Data Cleaning** to handle missing values
-- **Feature Engineering** to create new useful features
-- **Model Training** (comparing 3 ML models)
-- **Model Evaluation** and picking the best model
+Read through the code comments, run the file, and complete the **exercises** at the bottom of the script!
