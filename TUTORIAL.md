@@ -12,21 +12,26 @@ Welcome to your structured Data Science tutorial! This curriculum is designed to
 | **02** | **Pandas Data Analysis** | DataFrames, series, loading files, filtering, and aggregations. | ✅ Completed |
 | **03** | **Data Visualization** | Custom plots with Matplotlib & statistical graphs with Seaborn. | ✅ Completed |
 | **04** | **Exploratory Data Analysis** | Investigating a real dataset, finding patterns, and cleaning data. | ✅ Completed |
-| **05** | **Intro to Machine Learning** | Split data, train a model, predict, and evaluate with Scikit-learn. | 📖 **Next Up** |
+| **05** | **Intro to Machine Learning** | Split data, train a model, predict, and evaluate with Scikit-learn. | ✅ Completed |
+| **06** | **Capstone Project** | End-to-end project using all skills: EDA → cleaning → ML model → evaluation. | 📖 **Next Up** |
 
 ---
 
-## 🛠️ Current Lesson: Lesson 5
+## 🎓 Current Lesson: Capstone Project
 
-We have created the fifth and final lesson for you in the `lessons/` directory:
-👉 **[lessons/lesson5_ml.py](file:///home/denisd/Documents/My%20Projects/Data%20Science%20Practicals/lessons/lesson5_ml.py)**
+You've completed all the core modules! Now it's time to apply everything in one real-world project.
+👉 **[lessons/capstone_project.py](file:///home/denisd/Documents/My%20Projects/Data%20Science%20Practicals/lessons/capstone_project.py)**
 
 ### How to Run it:
 Activate your virtual environment and run the script:
 ```bash
 source .venv/bin/activate
-python lessons/lesson5_ml.py
+python lessons/capstone_project.py
 ```
 
-Read through the code comments, run the file, and complete the **exercises** at the bottom of the script!
-Congratulations on making it to the final module!
+This project uses the **Titanic dataset** to build a complete pipeline:
+- **EDA** to understand the data
+- **Data Cleaning** to handle missing values
+- **Feature Engineering** to create new useful features
+- **Model Training** (comparing 3 ML models)
+- **Model Evaluation** and picking the best model
