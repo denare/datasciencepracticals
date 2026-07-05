@@ -12,6 +12,7 @@
 # 5. Common Aggregations (mean, sum, std)
 # 6. Exercises for you!
 
+# pyrefly: ignore [missing-import]
 import numpy as np
 
 def main():

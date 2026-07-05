@@ -11,22 +11,22 @@ Welcome to your structured Data Science tutorial! This curriculum is designed to
 | **01** | **NumPy Foundations** | Vectors, matrices, slicing, math operations, and speed. | ✅ Completed |
 | **02** | **Pandas Data Analysis** | DataFrames, series, loading files, filtering, and aggregations. | ✅ Completed |
 | **03** | **Data Visualization** | Custom plots with Matplotlib & statistical graphs with Seaborn. | ✅ Completed |
-| **04** | **Exploratory Data Analysis** | Investigating a real dataset, finding patterns, and cleaning data. | 📖 **Next Up** |
-| **05** | **Intro to Machine Learning** | Split data, train a model, predict, and evaluate with Scikit-learn. | 🔒 Locked |
+| **04** | **Exploratory Data Analysis** | Investigating a real dataset, finding patterns, and cleaning data. | ✅ Completed |
+| **05** | **Intro to Machine Learning** | Split data, train a model, predict, and evaluate with Scikit-learn. | 📖 **Next Up** |
 
 ---
 
-## 🛠️ Current Lesson: Lesson 4
+## 🛠️ Current Lesson: Lesson 5
 
-We have created the fourth lesson for you in the `lessons/` directory:
-👉 **[lessons/lesson4_eda.py](file:///home/denisd/Documents/My%20Projects/Data%20Science%20Practicals/lessons/lesson4_eda.py)**
+We have created the fifth and final lesson for you in the `lessons/` directory:
+👉 **[lessons/lesson5_ml.py](file:///home/denisd/Documents/My%20Projects/Data%20Science%20Practicals/lessons/lesson5_ml.py)**
 
 ### How to Run it:
 Activate your virtual environment and run the script:
 ```bash
 source .venv/bin/activate
-python lessons/lesson4_eda.py
+python lessons/lesson5_ml.py
 ```
 
 Read through the code comments, run the file, and complete the **exercises** at the bottom of the script!
-Once you finish, we will proceed to Module 5 (Intro to Machine Learning)!
+Congratulations on making it to the final module!
