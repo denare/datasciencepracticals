@@ -11,6 +11,7 @@
 # 1. **Feature Scaling**: Normalizing features so they have the same scale (e.g. 0 to 1).
 # 2. **Pipelines**: Chaining preprocessing steps and your ML model into a single object.
 
+# %%
 import os
 # pyrefly: ignore [missing-import]
 import numpy as np
@@ -31,9 +32,11 @@ def main():
     print("=== Feature Scaling & Pipelines Lesson ===")
     os.makedirs('plots', exist_ok=True)
     
+# %% [markdown]
     # -------------------------------------------------------------------------
     # 1. Why Feature Scaling Matters
     # -------------------------------------------------------------------------
+# %%
     print("\n--- 1. Why Feature Scaling Matters ---")
     
     # We will use the Wine dataset. 
@@ -75,9 +78,11 @@ def main():
     plt.close()
     print("\nSaved 'plots/lesson7_scaling_comparison.png'")
     
+# %% [markdown]
     # -------------------------------------------------------------------------
     # 2. Training WITHOUT Scaling
     # -------------------------------------------------------------------------
+# %%
     print("\n--- 2. Training WITHOUT Scaling ---")
     
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
@@ -92,9 +97,11 @@ def main():
     
     print(f"KNN Accuracy (Unscaled): {unscaled_acc * 100:.2f}%")
     
+# %% [markdown]
     # -------------------------------------------------------------------------
     # 3. Enter: The Pipeline
     # -------------------------------------------------------------------------
+# %%
     print("\n--- 3. Using a Pipeline for Scaling + Training ---")
     
     # Instead of scaling manually, we build a Pipeline.
@@ -119,8 +126,10 @@ def main():
     print(f"Improvement: +{(scaled_acc - unscaled_acc) * 100:.2f}%")
 
     # -------------------------------------------------------------------------
+# %% [markdown]
     # YOUR TURN! (Exercises)
     # -------------------------------------------------------------------------
+# %%
     print("\n==============================================")
     print("Now run the exercises below by calling them in main()!")
     print("==============================================")
@@ -131,10 +140,12 @@ def run_exercises(X_train, X_test, y_train, y_test):
     print("\n--- Running Exercises ---")
     
     # Exercise 1: Try a different scaler!
+# %% [markdown]
     # Let's see how MinMaxScaler performs compared to StandardScaler.
     # MinMaxScaler scales all features to be exactly between 0 and 1.
     
     # TODO: Create a Pipeline using MinMaxScaler and KNeighborsClassifier
+# %%
     minmax_pipeline = None
     
     # TODO: Fit the minmax_pipeline on the training data

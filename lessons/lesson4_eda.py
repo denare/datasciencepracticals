@@ -12,6 +12,7 @@
 # 5. Feature Engineering (Creating new features)
 # 6. Exercises for you!
 
+# %%
 import os
 # pyrefly: ignore [missing-import]
 import pandas as pd
@@ -23,9 +24,11 @@ def main():
     print("=== Exploratory Data Analysis Lesson ===")
     os.makedirs('plots', exist_ok=True)
     
+# %% [markdown]
     # -------------------------------------------------------------------------
     # 1. Loading the Dataset
     # -------------------------------------------------------------------------
+# %%
     print("\n--- 1. Loading the Titanic Dataset ---")
     # Seaborn comes with several built-in datasets, Titanic is a classic
     df = sns.load_dataset('titanic')
@@ -34,9 +37,11 @@ def main():
     print("\nDataset Info:")
     df.info()
 
+# %% [markdown]
     # -------------------------------------------------------------------------
     # 2. Handling Missing Data
     # -------------------------------------------------------------------------
+# %%
     print("\n--- 2. Handling Missing Data ---")
     print("Missing values per column:\n", df.isnull().sum())
     
@@ -54,9 +59,11 @@ def main():
     
     print("\nMissing values after cleaning:\n", df.isnull().sum())
 
+# %% [markdown]
     # -------------------------------------------------------------------------
     # 3. Univariate Analysis
     # -------------------------------------------------------------------------
+# %%
     print("\n--- 3. Univariate Analysis (Single Variable) ---")
     
     # Let's see the survival rate (0 = No, 1 = Yes)
@@ -75,9 +82,11 @@ def main():
     plt.close()
     print("Saved 'plots/lesson4_age_distribution.png'")
 
+# %% [markdown]
     # -------------------------------------------------------------------------
     # 4. Bivariate Analysis
     # -------------------------------------------------------------------------
+# %%
     print("\n--- 4. Bivariate Analysis (Two Variables) ---")
     
     # Survival rate by gender
@@ -106,9 +115,11 @@ def main():
     plt.close()
     print("Saved 'plots/lesson4_age_vs_fare.png'")
 
+# %% [markdown]
     # -------------------------------------------------------------------------
     # 5. Feature Engineering
     # -------------------------------------------------------------------------
+# %%
     print("\n--- 5. Feature Engineering ---")
     # Create a new feature: 'family_size' = siblings/spouses (sibsp) + parents/children (parch) + 1 (self)
     df['family_size'] = df['sibsp'] + df['parch'] + 1
@@ -119,8 +130,10 @@ def main():
     print("\nCreated 'is_alone' feature. Head:\n", df[['family_size', 'is_alone']].head())
     
     # -------------------------------------------------------------------------
+# %% [markdown]
     # YOUR TURN! (Exercises)
     # -------------------------------------------------------------------------
+# %%
     print("\n==============================================")
     print("Now run the exercises below by calling them in main()!")
     print("==============================================")

@@ -1,4 +1,5 @@
 # =============================================================================
+# %% [markdown]
 # DEEP DIVE 1: NumPy Complete Reference 🧮
 # =============================================================================
 # NumPy is the backbone of scientific computing in Python. Every data science
@@ -19,6 +20,7 @@
 # =============================================================================
 
 # pyrefly: ignore [missing-import]
+# %%
 import numpy as np
 
 def part_a_creation():

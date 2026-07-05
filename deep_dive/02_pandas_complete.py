@@ -1,4 +1,5 @@
 # =============================================================================
+# %% [markdown]
 # DEEP DIVE 2: Pandas Complete Reference 🐼
 # =============================================================================
 # Pandas is the primary library for data manipulation and analysis in Python.
@@ -22,6 +23,7 @@
 #   Part O: Practical Examples
 # =============================================================================
 
+# %%
 import os
 # pyrefly: ignore [missing-import]
 import numpy as np

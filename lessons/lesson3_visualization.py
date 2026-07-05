@@ -15,6 +15,7 @@
 # 4. Box plots & Heatmaps in Seaborn
 # 5. Exercises for you!
 
+# %%
 import os
 # pyrefly: ignore [missing-import]
 import numpy as np
@@ -26,9 +27,11 @@ import seaborn as sns
 def main():
     print("=== Data Visualization Lesson ===")
     
+# %% [markdown]
     # -------------------------------------------------------------------------
     # 1. Setup & Sample Data
     # -------------------------------------------------------------------------
+# %%
     os.makedirs('plots', exist_ok=True)
     
     # Synthetic time-series data
@@ -41,9 +44,11 @@ def main():
     df_sales = pd.read_csv(os.path.join(current_dir, 'sample_sales.csv'))
     df_sales['Revenue'] = df_sales['Quantity'] * df_sales['Price']
 
+# %% [markdown]
     # -------------------------------------------------------------------------
     # 2. Matplotlib: Line Plots & Customization
     # -------------------------------------------------------------------------
+# %%
     print("\n1. Generating line plot using Matplotlib...")
     # Best practice: Use subplots to define fig (canvas) and ax (plot area)
     fig, ax = plt.subplots(figsize=(8, 5))
@@ -63,9 +68,11 @@ def main():
     plt.close()
     print("Saved 'plots/lesson3_line_plot.png'")
 
+# %% [markdown]
     # -------------------------------------------------------------------------
     # 3. Matplotlib: Scatter Plots
     # -------------------------------------------------------------------------
+# %%
     print("\n2. Generating scatter plot using Matplotlib...")
     # Generate random points
     x = np.random.randn(100)
@@ -85,9 +92,11 @@ def main():
     plt.close()
     print("Saved 'plots/lesson3_scatter_plot.png'")
 
+# %% [markdown]
     # -------------------------------------------------------------------------
     # 4. Seaborn: Histograms & Density Plots (KDE)
     # -------------------------------------------------------------------------
+# %%
     print("\n3. Generating distribution plots using Seaborn...")
     # Seaborn automatically integrates with Pandas DataFrames
     sns.set_theme(style="whitegrid") # Sets Seaborn style globally
@@ -102,9 +111,11 @@ def main():
     plt.close()
     print("Saved 'plots/lesson3_price_distribution.png'")
 
+# %% [markdown]
     # -------------------------------------------------------------------------
     # 5. Seaborn: Categorical Plots (Bar & Box plots)
     # -------------------------------------------------------------------------
+# %%
     print("\n4. Generating categorical plots using Seaborn...")
     # Bar plot showing mean price per category
     plt.figure(figsize=(8, 5))
@@ -128,8 +139,10 @@ def main():
 
     # -------------------------------------------------------------------------
     # YOUR TURN! (Exercises)
+# %% [markdown]
     # Run the script first, then write your code in the functions below.
     # -------------------------------------------------------------------------
+# %%
     print("\n==============================================")
     print("Now run the exercises below by calling them in main()!")
     print("==============================================")

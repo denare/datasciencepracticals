@@ -13,14 +13,17 @@
 # 6. Exercises for you!
 
 # pyrefly: ignore [missing-import]
+# %%
 import numpy as np
 
 def main():
     print("=== NumPy Foundations Lesson ===")
     
+# %% [markdown]
     # -------------------------------------------------------------------------
     # 1. Creating Arrays
     # -------------------------------------------------------------------------
+# %%
     print("\n--- 1. Creating Arrays ---")
     # From a list
     list1 = [1, 2, 3, 4, 5]
@@ -42,17 +45,21 @@ def main():
     print("Arange:", arange)
     print("Linspace:", linspace)
 
+# %% [markdown]
     # -------------------------------------------------------------------------
     # 2. Array Attributes
     # -------------------------------------------------------------------------
+# %%
     print("\n--- 2. Array Attributes ---")
     print("2D Array Shape:", arr2d.shape)  # Returns (rows, columns)
     print("2D Array Data Type:", arr2d.dtype)  # e.g. int64
     print("2D Array Dimensions:", arr2d.ndim)  # number of dimensions (2)
 
+# %% [markdown]
     # -------------------------------------------------------------------------
     # 3. Indexing & Slicing
     # -------------------------------------------------------------------------
+# %%
     print("\n--- 3. Indexing & Slicing ---")
     # Syntax: array[row_slice, col_slice]
     print("Original 2D Matrix:\n", arr2d)
@@ -61,9 +68,11 @@ def main():
     print("Get last column entirely:", arr2d[:, -1])
     print("Slice first two columns of all rows:\n", arr2d[:, :2])
 
+# %% [markdown]
     # -------------------------------------------------------------------------
     # 4. Element-wise Math & Broadcasting
     # -------------------------------------------------------------------------
+# %%
     print("\n--- 4. Element-wise Math & Broadcasting ---")
     a = np.array([10, 20, 30])
     b = np.array([1, 2, 3])
@@ -76,9 +85,11 @@ def main():
     # Broadcasting: Math operations between arrays of different shapes (or array & scalar)
     print("a + 5 =", a + 5)  # The scalar 5 is "broadcasted" to match the shape of a
 
+# %% [markdown]
     # -------------------------------------------------------------------------
     # 5. Common Aggregations
     # -------------------------------------------------------------------------
+# %%
     print("\n--- 5. Common Aggregations ---")
     data = np.array([[1, 2], [3, 4]])
     print("Data Matrix:\n", data)
@@ -89,8 +100,10 @@ def main():
 
     # -------------------------------------------------------------------------
     # YOUR TURN! (Exercises)
+# %% [markdown]
     # Run the script first, then write your code in the functions below.
     # -------------------------------------------------------------------------
+# %%
     print("\n==============================================")
     print("Now run the exercises below by calling them in main()!")
     print("==============================================")

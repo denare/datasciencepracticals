@@ -11,6 +11,7 @@
 # - Randomized Search (`RandomizedSearchCV`): Tries random combinations (faster).
 # - Tuning a Model inside a Pipeline.
 
+# %%
 import os
 # pyrefly: ignore [missing-import]
 import numpy as np
@@ -40,9 +41,11 @@ def main():
         X, y, test_size=0.2, random_state=42, stratify=y
     )
 
+# %% [markdown]
     # -------------------------------------------------------------------------
     # 1. Default Model Performance
     # -------------------------------------------------------------------------
+# %%
     print("\n--- 1. Default Model Performance ---")
     # Initialize Random Forest with defaults
     rf_default = RandomForestClassifier(random_state=42)
@@ -51,9 +54,11 @@ def main():
     default_acc = accuracy_score(y_test, default_pred)
     print(f"Default Random Forest Accuracy: {default_acc * 100:.2f}%")
 
+# %% [markdown]
     # -------------------------------------------------------------------------
     # 2. Grid Search (GridSearchCV)
     # -------------------------------------------------------------------------
+# %%
     print("\n--- 2. Grid Search (GridSearchCV) ---")
     # Grid Search is exhaustive: it tries every single combination.
     # Here we define the parameter grid (2 * 3 * 2 = 12 total combinations):
@@ -81,14 +86,17 @@ def main():
     grid_acc = accuracy_score(y_test, grid_pred)
     print(f"Grid Search Best Model Test Accuracy: {grid_acc * 100:.2f}%")
 
+# %% [markdown]
     # -------------------------------------------------------------------------
     # 3. Randomized Search (RandomizedSearchCV)
     # -------------------------------------------------------------------------
+# %%
     print("\n--- 3. Randomized Search (RandomizedSearchCV) ---")
     # If the grid is huge (e.g., thousands of combinations), Grid Search takes too long.
     # Randomized Search randomly samples combinations. It is much faster and often finds
     # just as good (or better) hyperparameters.
     
+    # pyrefly: ignore [missing-import]
     from scipy.stats import randint
 
     # We can use distributions for continuous/integer parameters
@@ -119,9 +127,11 @@ def main():
     random_acc = accuracy_score(y_test, random_pred)
     print(f"Randomized Search Best Model Test Accuracy: {random_acc * 100:.2f}%")
 
+# %% [markdown]
     # -------------------------------------------------------------------------
     # 4. Tuning inside a Pipeline
     # -------------------------------------------------------------------------
+# %%
     print("\n--- 4. Tuning Hyperparameters in a Pipeline ---")
     # What if we have scaling (or other preprocessing) steps in a Pipeline?
     # We can tune parameters of both the scaler AND the model!
@@ -149,8 +159,10 @@ def main():
     print(f"Tuned Pipeline Test Accuracy: {pipe_acc * 100:.2f}%")
 
     # -------------------------------------------------------------------------
+# %% [markdown]
     # YOUR TURN! (Exercises)
     # -------------------------------------------------------------------------
+# %%
     print("\n==============================================")
     print("Now run the exercises below by calling them in main()!")
     print("==============================================")
@@ -166,6 +178,7 @@ def run_exercises(X_train, X_test, y_train, y_test):
     # TODO: Create a pipeline with StandardScaler and SVC
     # svc_pipe = Pipeline(...)
 
+# %% [markdown]
     # TODO: Define a parameter grid to tune SVC parameters:
     # - 'svc__C': [0.1, 1, 10]
     # - 'svc__kernel': ['linear', 'rbf']
@@ -176,6 +189,7 @@ def run_exercises(X_train, X_test, y_train, y_test):
     # svc_grid.fit(X_train, y_train)
 
     # TODO: Print the best parameters and test accuracy
+# %%
     best_params = None
     test_accuracy = None
     

@@ -1,4 +1,5 @@
 # =============================================================================
+# %% [markdown]
 # DEEP DIVE 4: Seaborn Complete Reference 📊
 # =============================================================================
 # Seaborn is a high-level visualization library built on Matplotlib.
@@ -16,6 +17,7 @@
 #   Part I: Practical Examples
 # =============================================================================
 
+# %%
 import os
 # pyrefly: ignore [missing-import]
 import numpy as np

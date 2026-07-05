@@ -16,6 +16,7 @@
 #
 # Dataset: Titanic (Will passengers survive? 0=No, 1=Yes)
 
+# %%
 import os
 # pyrefly: ignore [missing-import]
 import numpy as np
@@ -36,8 +37,10 @@ def main():
     sns.set_theme(style='whitegrid')
 
     # =========================================================================
+# %% [markdown]
     # STEP 1: Load & Explore the Data
     # =========================================================================
+# %%
     print("=" * 60)
     print("STEP 1: Load & Explore the Data")
     print("=" * 60)
@@ -67,8 +70,10 @@ def main():
     print("\nSaved EDA chart → 'plots/capstone_eda.png'")
 
     # =========================================================================
+# %% [markdown]
     # STEP 2: Clean & Handle Missing Values
     # =========================================================================
+# %%
     print("\n" + "=" * 60)
     print("STEP 2: Clean & Handle Missing Values")
     print("=" * 60)
@@ -86,8 +91,10 @@ def main():
     print(f"Cleaned shape: {df.shape}")
 
     # =========================================================================
+# %% [markdown]
     # STEP 3: Feature Engineering
     # =========================================================================
+# %%
     print("\n" + "=" * 60)
     print("STEP 3: Feature Engineering")
     print("=" * 60)
@@ -102,8 +109,10 @@ def main():
     print(df[['family_size', 'is_alone', 'age_group']].head())
 
     # =========================================================================
+# %% [markdown]
     # STEP 4: Encode Categorical Features
     # =========================================================================
+# %%
     print("\n" + "=" * 60)
     print("STEP 4: Encode Categorical Features")
     print("=" * 60)
@@ -118,8 +127,10 @@ def main():
     print("Categorical columns encoded to integers.")
 
     # =========================================================================
+# %% [markdown]
     # STEP 5: Train/Test Split
     # =========================================================================
+# %%
     print("\n" + "=" * 60)
     print("STEP 5: Train/Test Split")
     print("=" * 60)
@@ -138,8 +149,10 @@ def main():
     print(f"Training: {X_train.shape[0]} samples | Testing: {X_test.shape[0]} samples")
 
     # =========================================================================
+# %% [markdown]
     # STEP 6: Train & Compare 3 ML Models
     # =========================================================================
+# %%
     print("\n" + "=" * 60)
     print("STEP 6: Train & Compare 3 ML Models")
     print("=" * 60)
@@ -160,8 +173,10 @@ def main():
         print(f"  {name:<25} | CV Accuracy: {cv_scores.mean()*100:.2f}% | Test Accuracy: {test_acc*100:.2f}%")
 
     # =========================================================================
+# %% [markdown]
     # STEP 7: Evaluate the Best Model
     # =========================================================================
+# %%
     print("\n" + "=" * 60)
     print("STEP 7: Evaluate the Best Model")
     print("=" * 60)

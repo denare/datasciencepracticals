@@ -14,6 +14,7 @@
 # 6. Grouping and Aggregating Data
 # 7. Exercises for you!
 
+# %%
 import os
 import pandas as pd
 
@@ -24,9 +25,11 @@ def main():
     current_dir = os.path.dirname(os.path.abspath(__file__))
     csv_path = os.path.join(current_dir, 'sample_sales.csv')
 
+# %% [markdown]
     # -------------------------------------------------------------------------
     # 1. Creating Series and DataFrames
     # -------------------------------------------------------------------------
+# %%
     print("\n--- 1. Creating Series & DataFrames ---")
     # A Series: list of values with index labels
     s = pd.Series([10, 20, 30, 40], index=['a', 'b', 'c', 'd'])
@@ -41,17 +44,21 @@ def main():
     df_students = pd.DataFrame(student_data)
     print("\nDataFrame from Dictionary:\n", df_students)
 
+# %% [markdown]
     # -------------------------------------------------------------------------
     # 2. Reading CSV Data
     # -------------------------------------------------------------------------
+# %%
     print("\n--- 2. Reading CSV Data ---")
     # Read our sample sales CSV file
     df_sales = pd.read_csv(csv_path)
     print("Loaded CSV into DataFrame successfully!")
 
+# %% [markdown]
     # -------------------------------------------------------------------------
     # 3. Inspecting and Describing Data
     # -------------------------------------------------------------------------
+# %%
     print("\n--- 3. Inspecting Data ---")
     print("df_sales Shape (rows, columns):", df_sales.shape)
     print("\n--- Head (first 3 rows) ---")
@@ -61,9 +68,11 @@ def main():
     print("\n--- Describe (summary statistics) ---")
     print(df_sales.describe())
 
+# %% [markdown]
     # -------------------------------------------------------------------------
     # 4. Selection and Indexing (loc / iloc)
     # -------------------------------------------------------------------------
+# %%
     print("\n--- 4. Selection and Indexing ---")
     # Bracket selection for columns
     print("Select a single column ('Product'):\n", df_sales['Product'].head(3))
@@ -75,9 +84,11 @@ def main():
     print("\nGet rows 0 to 2, columns 'Product' and 'Price' using .loc:\n", df_sales.loc[0:2, ['Product', 'Price']])
     print("\nGet cell at row 1, col 2 using .iloc:\n", df_sales.iloc[1, 2])
 
+# %% [markdown]
     # -------------------------------------------------------------------------
     # 5. Filtering Data
     # -------------------------------------------------------------------------
+# %%
     print("\n--- 5. Filtering Data ---")
     # Filter sales where Price is greater than 200
     expensive_sales = df_sales[df_sales['Price'] > 200]
@@ -87,9 +98,11 @@ def main():
     us_electronics = df_sales[(df_sales['Country'] == 'US') & (df_sales['Category'] == 'Electronics')]
     print("\nUS Electronics sales:\n", us_electronics)
 
+# %% [markdown]
     # -------------------------------------------------------------------------
     # 6. Grouping and Aggregating Data
     # -------------------------------------------------------------------------
+# %%
     print("\n--- 6. Grouping & Aggregating ---")
     # Calculate revenue (Quantity * Price) and add it as a new column
     df_sales['Revenue'] = df_sales['Quantity'] * df_sales['Price']
@@ -108,8 +121,10 @@ def main():
 
     # -------------------------------------------------------------------------
     # YOUR TURN! (Exercises)
+# %% [markdown]
     # Run the script first, then write your code in the functions below.
     # -------------------------------------------------------------------------
+# %%
     print("\n==============================================")
     print("Now run the exercises below by calling them in main()!")
     print("==============================================")

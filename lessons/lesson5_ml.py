@@ -12,6 +12,7 @@
 # 5. Evaluating Model Performance (Accuracy, Confusion Matrix)
 # 6. Exercises for you!
 
+# %%
 import os
 # pyrefly: ignore [missing-import]
 import pandas as pd
@@ -29,9 +30,11 @@ def main():
     print("=== Intro to Machine Learning Lesson ===")
     os.makedirs('plots', exist_ok=True)
     
+# %% [markdown]
     # -------------------------------------------------------------------------
     # 1. Loading the Dataset
     # -------------------------------------------------------------------------
+# %%
     print("\n--- 1. Loading the Dataset ---")
     # Load breast cancer dataset from scikit-learn
     data = load_breast_cancer(as_frame=True)
@@ -41,9 +44,11 @@ def main():
     print("\nTarget classes:", data.target_names)
     print("Class distribution:\n", df['target'].value_counts())
 
+# %% [markdown]
     # -------------------------------------------------------------------------
     # 2. Preparing Features (X) and Target (y)
     # -------------------------------------------------------------------------
+# %%
     print("\n--- 2. Preparing Features and Target ---")
     # Features (X) are all columns except the target
     X = df.drop(columns=['target'])
@@ -54,9 +59,11 @@ def main():
     print(f"X shape (Features): {X.shape}")
     print(f"y shape (Target): {y.shape}")
 
+# %% [markdown]
     # -------------------------------------------------------------------------
     # 3. Train/Test Split
     # -------------------------------------------------------------------------
+# %%
     print("\n--- 3. Train/Test Split ---")
     # We split the data so we can test the model on unseen data
     # 80% for training, 20% for testing
@@ -67,9 +74,11 @@ def main():
     print(f"Training set size: {X_train.shape[0]} samples")
     print(f"Testing set size: {X_test.shape[0]} samples")
 
+# %% [markdown]
     # -------------------------------------------------------------------------
     # 4. Training the Model
     # -------------------------------------------------------------------------
+# %%
     print("\n--- 4. Training the Model (Logistic Regression) ---")
     # Initialize the model (max_iter=10000 ensures it has enough time to converge)
     model = LogisticRegression(max_iter=10000, random_state=42)
@@ -78,9 +87,11 @@ def main():
     model.fit(X_train, y_train)
     print("Model training complete!")
 
+# %% [markdown]
     # -------------------------------------------------------------------------
     # 5. Evaluating Model Performance
     # -------------------------------------------------------------------------
+# %%
     print("\n--- 5. Evaluating the Model ---")
     # Ask the trained model to predict the labels for the test set
     y_pred = model.predict(X_test)
@@ -111,8 +122,10 @@ def main():
     print("Saved 'plots/lesson5_confusion_matrix.png'")
 
     # -------------------------------------------------------------------------
+# %% [markdown]
     # YOUR TURN! (Exercises)
     # -------------------------------------------------------------------------
+# %%
     print("\n==============================================")
     print("Now run the exercises below by calling them in main()!")
     print("==============================================")

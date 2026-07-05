@@ -1,4 +1,5 @@
 # =============================================================================
+# %% [markdown]
 # DEEP DIVE 5: Scikit-learn Complete Reference 🤖
 # =============================================================================
 # Scikit-learn is the standard ML library in Python. It provides:
@@ -21,6 +22,7 @@
 #   Part K: Full Pipeline Example
 # =============================================================================
 
+# %%
 import os
 import warnings
 # pyrefly: ignore [missing-import]

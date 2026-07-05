@@ -1,4 +1,5 @@
 # =============================================================================
+# %% [markdown]
 # DEEP DIVE 3: Matplotlib Complete Reference 📈
 # =============================================================================
 # Matplotlib is the foundational plotting library in Python.
@@ -17,11 +18,13 @@
 #   Part J: Saving Figures
 # =============================================================================
 
+# %%
 import os
 # pyrefly: ignore [missing-import]
 import numpy as np
 # pyrefly: ignore [missing-import]
 import matplotlib.pyplot as plt
+# pyrefly: ignore [missing-import]
 from matplotlib.gridspec import GridSpec
 
 def setup():
