@@ -23,20 +23,21 @@ Welcome to your structured Data Science tutorial! This curriculum is designed to
 |---|---|---|---|
 | **07** | **Feature Scaling & Pipelines** | Normalize data and chain preprocessing with ML models for clean code. | ✅ Completed |
 | **08** | **Hyperparameter Tuning** | Optimize model settings using `GridSearchCV`. | ✅ Completed |
-| **09** | **Cross-Validation** | Robustly evaluate models to prevent overfitting. | 📖 **Next Up** |
+| **09** | **Cross-Validation** | Robustly evaluate models to prevent overfitting. | ✅ Completed |
+| **10** | **Handling Imbalanced Data** | SMOTE, class weights, and evaluating models with biased classes. | 📖 **Next Up** |
 
 ---
 
-## 🛠️ Current Lesson: Lesson 9 (Cross-Validation)
+## 🛠️ Current Lesson: Lesson 10 (Handling Imbalanced Data)
 
-Welcome to **Module 9**! Your next lesson is ready:
-👉 **[lessons/lesson9_cv.py](file:///home/denisd/Documents/My%20Projects/Data%20Science%20Practicals/lessons/lesson9_cv.py)** / **[lessons/lesson9_cv.ipynb](file:///home/denisd/Documents/My%20Projects/Data%20Science%20Practicals/lessons/lesson9_cv.ipynb)**
+Welcome to **Module 10**! Your next lesson is ready:
+👉 **[lessons/lesson10_imbalance.py](file:///home/denisd/Documents/My%20Projects/Data%20Science%20Practicals/lessons/lesson10_imbalance.py)** / **[lessons/lesson10_imbalance.ipynb](file:///home/denisd/Documents/My%20Projects/Data%20Science%20Practicals/lessons/lesson10_imbalance.ipynb)**
 
 ### How to Run it:
 Activate your virtual environment and run the script:
 ```bash
 source .venv/bin/activate
-python lessons/lesson9_cv.py
+python lessons/lesson10_imbalance.py
 ```
 
 Read through the code comments, run the file, and complete the **exercises** at the bottom of the script!
