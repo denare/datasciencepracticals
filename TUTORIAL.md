@@ -24,20 +24,21 @@ Welcome to your structured Data Science tutorial! This curriculum is designed to
 | **07** | **Feature Scaling & Pipelines** | Normalize data and chain preprocessing with ML models for clean code. | ✅ Completed |
 | **08** | **Hyperparameter Tuning** | Optimize model settings using `GridSearchCV`. | ✅ Completed |
 | **09** | **Cross-Validation** | Robustly evaluate models to prevent overfitting. | ✅ Completed |
-| **10** | **Handling Imbalanced Data** | SMOTE, class weights, and evaluating models with biased classes. | 📖 **Next Up** |
+| **10** | **Handling Imbalanced Data** | SMOTE, class weights, and evaluating models with biased classes. | ✅ Completed |
+| **11** | **Feature Selection & PCA** | Select key features and perform Principal Component Analysis. | 📖 **Next Up** |
 
 ---
 
-## 🛠️ Current Lesson: Lesson 10 (Handling Imbalanced Data)
+## 🛠️ Current Lesson: Lesson 11 (Feature Selection & PCA)
 
-Welcome to **Module 10**! Your next lesson is ready:
-👉 **[lessons/lesson10_imbalance.py](file:///home/denisd/Documents/My%20Projects/Data%20Science%20Practicals/lessons/lesson10_imbalance.py)** / **[lessons/lesson10_imbalance.ipynb](file:///home/denisd/Documents/My%20Projects/Data%20Science%20Practicals/lessons/lesson10_imbalance.ipynb)**
+Welcome to **Module 11**! Your next lesson is ready:
+👉 **[lessons/lesson11_dimensionality.py](file:///home/denisd/Documents/My%20Projects/Data%20Science%20Practicals/lessons/lesson11_dimensionality.py)** / **[lessons/lesson11_dimensionality.ipynb](file:///home/denisd/Documents/My%20Projects/Data%20Science%20Practicals/lessons/lesson11_dimensionality.ipynb)**
 
 ### How to Run it:
 Activate your virtual environment and run the script:
 ```bash
 source .venv/bin/activate
-python lessons/lesson10_imbalance.py
+python lessons/lesson11_dimensionality.py
 ```
 
 Read through the code comments, run the file, and complete the **exercises** at the bottom of the script!
